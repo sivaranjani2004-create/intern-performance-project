@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login</title>
+<style>
+body {
+    background: linear-gradient(135deg,#0f172a,#1e3a8a);
+    color:white;
+    font-family:Arial;
+    text-align:center;
+}
+.box {
+    background:rgba(255,255,255,0.1);
+    padding:30px;
+    margin:100px auto;
+    width:300px;
+    border-radius:15px;
+}
+input {
+    width:90%;
+    padding:10px;
+    margin:10px;
+}
+button {
+    padding:10px;
+    background:#22c55e;
+    border:none;
+    color:white;
+}
+</style>
+</head>
+<body>
+
+<div class="box">
+<h2>🔐 Login</h2>
+<form method="POST">
+<input name="username" placeholder="Username">
+<input name="password" type="password" placeholder="Password">
+<button type="submit">Login</button>
+</form>
+<p style="color:red">{{error}}</p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+body {
+    margin:0;
+    font-family:Arial;
+    background:linear-gradient(to right,#0f2027,#203a43,#2c5364);
+    color:white;
+}
+
+.navbar {
+    text-align:center;
+    padding:20px;
+}
+
+.navbar a {
+    margin:15px;
+    color:white;
+    text-decoration:none;
+}
+
+.card {
+    width:600px;
+    margin:50px auto;
+    padding:30px;
+    background:rgba(255,255,255,0.1);
+    border-radius:10px;
+    text-align:center;
+}
+
+input {
+    width:90%;
+    padding:10px;
+    margin:8px;
+    border:none;
+    border-radius:5px;
+}
+
+button {
+    padding:10px 20px;
+    background:#28a745;
+    color:white;
+    border:none;
+    border-radius:5px;
+}
+
+/* TABLE FIX */
+.table-wrapper {
+    width:100%;
+    overflow-x:auto;
+    margin-top:20px;
+}
+
+table {
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+    color:black;
+}
+
+th {
+    background:#28a745;
+    color:white;
+    padding:10px;
+}
+
+td {
+    padding:8px;
+    text-align:center;
+}
+
+tr:hover {
+    background:#f1f1f1;
+}
+
+/* GRAPH */
+canvas {
+    margin-top:20px;
+    background:white;
+    border-radius:10px;
+    padding:10px;
+}

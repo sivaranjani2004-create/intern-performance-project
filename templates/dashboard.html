@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dashboard</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="navbar">
+<a href="/dashboard">Dashboard</a>
+<a href="/upload">CSV Upload</a>
+</div>
+
+<div class="card">
+<h2>Prediction</h2>
+
+<form action="/predict" method="POST">
+<input type="number" name="Tasks_Assigned" placeholder="Tasks Assigned" required>
+<input type="number" name="Tasks_Completed" placeholder="Tasks Completed" required>
+<input type="number" step="0.01" name="Avg_Task_Time_Hours" placeholder="Avg Task Time" required>
+<input type="number" step="0.01" name="Attendance_Percentage" placeholder="Attendance %" required>
+<input type="number" step="0.01" name="Consistency_Score" placeholder="Consistency Score" required>
+<input type="number" step="0.01" name="Engagement_Score" placeholder="Engagement Score" required>
+<input type="number" step="0.01" name="Feedback_Score" placeholder="Feedback Score" required>
+<input type="number" step="0.01" name="Learning_Progress" placeholder="Learning Progress" required>
+<input type="number" name="Deadline_Misses" placeholder="Deadline Misses" required>
+
+<button type="submit">Predict</button>
+</form>
+
+{% if prediction_text %}
+<h3>{{ prediction_text }}</h3>
+{% endif %}
+
+</div>
+
+</body>
+</html>
