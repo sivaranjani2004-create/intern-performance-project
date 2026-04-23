@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Intern Performance Prediction System
 
 ## Project Overview
@@ -35,3 +36,6 @@ python app.py
 7. Feedback Score
 8. Learning Progress
 9. Deadline Misses
+=======
+# intern-performance-project
+>>>>>>> b39c75635030cbeca2db4140a47fbcd185eb5116
